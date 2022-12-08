@@ -7,11 +7,65 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
     <name>Things-dataflow</name>
+    <url>https://github.com/tingfeng1002/things-dataflow</url>
+    <inceptionYear>2022</inceptionYear>
 
-
+    <properties>
+        <java-version>17</java-version>
+        <spring-version>5.3.24</spring-version>
+        <spring-boot-version>2.7.6</spring-boot-version>
+        <mybatis-spring-version>2.3</mybatis-spring-version>
+        <netty-version>4.1.85.Final</netty-version>
+        <guava-version>31.1-jre</guava-version>
+    </properties>
     <dependencyManagement>
 
     </dependencyManagement>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
+    <developers>
+        <developer>
+            <id>wang xiao</id>
+            <name>王潇</name>
+            <email>wxiao1002@yeah.net</email>
+        </developer>
+    </developers>
+
+    <repositories>
+        <repository>
+            <id>nexus-ali-yun</id>
+            <name>nexus-ali-yun</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus-ali-yun</id>
+            <name>nexus-ali-yun</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
